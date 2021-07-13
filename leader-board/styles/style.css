@@ -64,6 +64,27 @@ header {
     align-items: center;
 }
 
+.nav-list a {
+    position: relative;
+}
+
+#dropdown-checkbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    z-index: 10;
+    /* visibility: hidden; */
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .nav-list a img {
     width: 51px;
 }
@@ -97,10 +118,10 @@ header {
 .player img {
   width: 56px;
   height: 56px;
+  margin-right: 16px;
 }
 
 .player-name {
-  padding-left: 16px;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
@@ -258,7 +279,11 @@ hr {
 
     .player, .player-name, .blog {
         flex-direction: column;
+        align-items: center;
         margin: 10px 0;
+    }
+    .player img {
+        margin: 0;
     }
     
 }
@@ -292,6 +317,11 @@ hr {
         flex-direction: column;
         margin: 10px 0;
     }
+
+    .player img {
+        margin: 0;
+    }
+    
     
     .course__info {
         font-size: 10px;
@@ -322,6 +352,11 @@ hr {
     .player, .player-name, .blog {
         flex-direction: column;
         margin: 10px 0;
-    }  
+    }
+
+    .player img {
+        margin: 0;
+    }
+    
 }
 
